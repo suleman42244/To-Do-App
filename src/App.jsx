@@ -1,6 +1,6 @@
 function App(){
   return(
-    <p>THis is my first component </p>
+    <p>This is my first component </p>
   )
 }
 
