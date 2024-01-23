@@ -1,6 +1,8 @@
+import ToDoList from "./ToDoList";
+
 function App(){
   return(
-    <p>This is my first component </p>
+    <ToDoList />
   )
 }
 
