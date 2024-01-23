@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './index.css';
 
 function ToDoList() {
   const [tasks, setTasks] = useState([
@@ -12,7 +13,12 @@ function ToDoList() {
     setNewTasks(event.target.value);
   }
 
-  function addTask() {}
+  function addTask() {
+    if(newTasks.trim() !== ""){
+        setTasks(t => [...t, newTasks]);
+        setNewTasks("");
+    }
+  }
 
   function deleteTask(index) {}
 
